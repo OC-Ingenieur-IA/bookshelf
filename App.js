@@ -23,7 +23,7 @@ class App extends Component {
   };
 
   goToStep1 = async () => {
-    const url = config.API_URL + '?userId=' +  this.state.selectedUser + '&prediction=4'
+    const url = config.API_URL + '?userId=' +  this.state.selectedUser + '&recommendation=5'
     const { data: recommendations } = await axios.get(url, {
       userId: this.state.selectedUser
     });
